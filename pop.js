@@ -1,6 +1,6 @@
 var cars=[" BMW", " benz", " toyota"];
 
-document.getElementById("demo").innerHTML="There are" + cars.length+ " cars..." + cars.toString();
+document.getElementById("demo").innerHTML="There are" + cars.length + "  cars..." + cars.toString();
 
 cars.unshift("Lexus");
 
