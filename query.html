@@ -1,0 +1,48 @@
+<html>
+<head>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+<h1>  Our class</h1>
+<p class="weAreOne"> Hello, l am Yvonne and l am very dirty minded.</p>
+
+  <script>
+  $(document).ready(function(){
+    $("ul li:first").click(function(){
+    $("ul li:first").hide();
+    });
+   });
+    $(document).ready(function(){
+    $("button.button").click(function(){
+      $(".weAreOne").hide();
+    });
+  });
+
+  $(document).ready(function(){
+  $("button.show").click(function(){
+    $("ul li:first").show();
+  });
+});
+
+$(document).ready(function(){
+$("button.show").dblclick(function(){
+  $(".weAreOne").show();
+});
+});
+  </script>
+
+  <ul>
+    <li>
+      Rumbi would be a good girl for Tau
+      </li>
+      <li>
+        Vimbai and Tatenda were meant to be
+        </li>
+        <li style=color:blue>Tricia only dates guys who drive merces.
+          </li>
+
+</ul>
+<button class="button"> button </button>
+<button class="show"> show </button>
+</body>
+</html>
