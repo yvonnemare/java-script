@@ -19,15 +19,20 @@
   <script>
     $(document).ready(function(){
       $("#flip").click(function(){
-        $("#panel").slideDown("slow");
+        $("#panel").slideDown(15000);
       });
     });
 
     $(document).ready(function(){
   $(".btn1").click(function(){
-    $("#panel").slideUp();
+    $("#panel").slideUp(20000);
   });
     });
+$(document).ready(function(){
+    $(".stop").click(function(){
+    $("#panel").stop();
+  });
+});
 
   </script>
 
@@ -35,6 +40,7 @@
   <div id="flip">Click to slide down panel</div>
   <div id="panel">Hello world</div>
   <button class="btn1">Slide up</button>
+  <button class="stop">Stop sliding</button>
   </body>
 
 </html>
