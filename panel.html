@@ -22,11 +22,19 @@
         $("#panel").slideDown("slow");
       });
     });
+
+    $(document).ready(function(){
+  $(".btn1").click(function(){
+    $("#panel").slideUp();
+  });
+    });
+
   </script>
 
 
   <div id="flip">Click to slide down panel</div>
   <div id="panel">Hello world</div>
+  <button class="btn1">Slide up</button>
   </body>
 
 </html>
