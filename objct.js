@@ -1,10 +1,21 @@
-var car = {
-
+var corolla ={
   brand: " Toyota",
-  make: " Corolla",
-  Type:" Sedan",
-  Color:" blue",
-  yearOfRelease:"1997",
+  make: " corolla",
+  type:" Sedan",
+  color:" blue",
+  yearOfRelease: 1997
 };
-document.getElementById("demo").innerHTML="This is a " +car.brand +"car called a" +car.make;
-document.getElementById("dem").innerHTML="It is a "+ car.Type + "which is" + car.Color + " and was released in" + car.yearOfRelease;
+  var rangeRover = {
+    brand: " Range Rover",
+    make: " Sport",
+    type: " SUV",
+    color: " white",
+    yearOfRelease: 2010
+};
+
+var cars =[ corolla,  rangeRover];
+
+for(i=0; i<cars.length; i++){
+document.write("This is a " + cars[i].brand + " car called a " + cars[i].make + ". It is a " + cars[i].type + " which is " + cars[i].color + " and was released in " +
+cars[i].yearOfRelease   + "<br/><br/>");
+}
