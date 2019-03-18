@@ -1,22 +1,27 @@
+<!DOCTYPE html>
 <html>
 <head>
-   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-  </head>
+	<title></title>
+</head>
 <body>
+	<script>
+		function Student(firstName, lastName, gender, relationshipStatus){
+		this.name = firstName;
+		this.surname = lastName;
+		this.gender = gender;
+		this.status = relationshipStatus;
 
-    <p id="demo"></p>
-        <script src="objct.js"></script>
-        <button class="button"> Click </button>
-        
-        <script>
-        $(document).ready(function(){
-          $(".button").click(function(){
-            $("*").fadeOut(4000);
-          });
-        });
+		this.greeting = function(){
+			document.write("hi my name is " + this.name + " and l am " + this.status + "<br/>");
+		}
+	}
+	var student1 = new Student("Yvonne", " Mare", " female", " engaged");
+	var student2 = new Student("Yvetty", " Murray", " female", " married");
 
 
-  </script>
-  </body>
+	student1.greeting();
+	student2.greeting();
+	</script>
 
+</body>
 </html>
