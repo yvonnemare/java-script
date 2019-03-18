@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<script>
+		function Message(messageBody, date, delivery, reciever, sender){
+		this.text = messageBody;
+		this.date = date;
+		this.deliveryStatus = delivery;
+		this.to = reciever;
+		this.from = sender;
+
+		this.display = function(){
+			document.write("A text from " + this.from + "to " + this.to + ", which wishes a " + this.text + "on " + this.date +" has" + this.deliveryStatus + "<br/>");
+		};
+	}
+	var message1 = new Message(" Happy Valentines Day ", " 14 February 2019  ", " delivered ", " Bae ", " Yvee ");
+	var message2 = new Message(" Happy new year mommy ", " 1 January 2019 ", " recieved", " mommy ", " daughter ");
+
+	message1.display();
+	message2.display();
+	</script>
+
+</body>
+</html>
