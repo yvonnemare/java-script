@@ -5,21 +5,22 @@
 </head>
 <body>
 	<script>
-		function Person(name, surname, age, gender){
+		function Person(name, surname, age, gender, interests){
 		this.name = name;
 		this.surname = surname;
 		this.age = age;
 		this.gender = gender;
-		
+		this.interests= interests;
 
-		this.toString = function(){
-			document.write("Hi, my name is " + this.name + "of house " + this.surname + " I am " + this.age + " and l am a  " + this.gender 				+ "<br/>");
+        
+        		this.toString = function(){
+			document.write("Hi, my name is " + this.name + "of house " + this.surname + " I am " + this.age + " and l am a  " + this.gender + " and l like " + this.interests + "<br/>");
 		};
 	}
-	var person1 = new Person(" Belinda ", " Mapedza  ", " twenty-three ", "female. ");
-	var person2 = new Person(" Clara ", " Nyamz ", " thweny-three", " female. ");
-	var person3 = new Person(" Patricia ", " Vinga ", " twenty-six ", " female. ");
-    var person4 = new Person("Tatenda", " Marshall ", " twenty-two", " male. ");
+	var person1 = new Person(" Belinda ", " Mapedza  ", " twenty-three ", "female ", [" cooking ", " travelling ","African movies"]);
+	var person2 = new Person(" Clara ", " Nyamz ", " thweny-three", " female",[" gospel music", " modelling shows"]);
+	var person3 = new Person(" Patricia ", " Vinga ", " twenty-six ", " female ", [" social outings", " dancing ","cartoons"]);
+    var person4 = new Person(" Tatenda ", " Marshall ", " twenty-two", " male ", [" clubing ", "movies"," swimming"]);
 
 	person1.toString();
 	person2.toString();
